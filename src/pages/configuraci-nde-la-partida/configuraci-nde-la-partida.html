@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Configuración de la partida
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page2">
+  <form id="configuraciNDeLaPartida-form1">
+    <h4 id="configuraciNDeLaPartida-heading1" style="color:#000000;">
+      Indica el número de jugadores:
+    </h4>
+    <div class="spacer" style="width:300px;height:23px;" id="configuraciNDeLaPartida-spacer5"></div>
+    <ion-list id="configuraciNDeLaPartida-list1">
+      <ion-item id="configuraciNDeLaPartida-select1">
+        <ion-label>
+          Número de jugadores
+        </ion-label>
+        <ion-select #numPlayers name="">
+          <ion-option>
+            3
+          </ion-option>
+          <ion-option>
+            4
+          </ion-option>
+          <ion-option>
+            5
+          </ion-option>
+          <ion-option>
+            6
+          </ion-option>
+          <ion-option>
+            7
+          </ion-option>
+          <ion-option>
+            8
+          </ion-option>
+          <ion-option>
+            9
+          </ion-option>
+          <ion-option>
+            10
+          </ion-option>
+          <ion-option>
+            11
+          </ion-option>
+          <ion-option>
+            12
+          </ion-option>
+          <ion-option>
+            13
+          </ion-option>
+          <ion-option>
+            14
+          </ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item id="configuraciNDeLaPartida-select2">
+        <ion-label>
+          Número de asesinos
+        </ion-label>
+        <ion-select #numKillers name="">
+          <ion-option>
+            1
+          </ion-option>
+          <ion-option>
+            2
+          </ion-option>
+          <ion-option>
+            3
+          </ion-option>
+          <ion-option>
+            4
+          </ion-option>
+          <ion-option>
+            5
+          </ion-option>
+          <ion-option>
+            6
+          </ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="height:40px;" id="configuraciNDeLaPartida-spacer4"></div>
+    <button id="configuraciNDeLaPartida-button2" ion-button outline color="positive" block icon-right on-click="goToConfiguraciNDeLaPartida2(numPlayers,numKillers)">
+      Continuar
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </button>
+  </form>
+</ion-content>

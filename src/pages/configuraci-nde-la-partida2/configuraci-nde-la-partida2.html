@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Configuración de la partida
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+    <h4 id="configuraciNDeLaPartida2-heading2" style="color:#000000;">
+      Añade los nombres de los jugadores
+    </h4>
+    <ion-item id="configuraciNDeLaPartida2-input4">
+      <ion-input #playerName type="text" placeholder="Nombre..." ></ion-input>
+      <button id="adButton" ion-button outline color="positive" icon-left item-right (click)="addPlayer(playerName)">
+        <ion-icon name="add-circle"></ion-icon>
+        Añadir
+      </button>
+    </ion-item>
+  <ion-list id="jugadores">
+    <ion-item color="blue" *ngFor="let player of nombres">
+      {{player}}
+    </ion-item>
+  </ion-list>
+</ion-content>
