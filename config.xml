@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.release.elAsesino" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.release.elAsesino" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>elAsesino</name>
     <description>Nueva version del asesino, ahora con ionic.</description>
     <author email="migueljimenezbenajes@gmail.com" href="https://github.com/mijim">MJB github page</author>
