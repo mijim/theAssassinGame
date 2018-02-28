@@ -9,6 +9,7 @@ import { ListoPage } from '../pages/listo/listo';
 import { JuegoPage } from '../pages/juego/juego';
 import { FinDelJuegoPage } from '../pages/fin-del-juego/fin-del-juego';
 import { FinDelJuego2Page } from '../pages/fin-del-juego2/fin-del-juego2';
+import { MostrarAsesinoPage } from '../pages/mostrar-asesino/mostrar-asesino';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListoPage,
     JuegoPage,
     FinDelJuegoPage,
-    FinDelJuego2Page
+    FinDelJuego2Page,
+    MostrarAsesinoPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListoPage,
     JuegoPage,
     FinDelJuegoPage,
-    FinDelJuego2Page
+    FinDelJuego2Page,
+    MostrarAsesinoPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { JuegoPage } from '../juego/juego';
+import { MostrarAsesinoPage } from '../mostrar-asesino/mostrar-asesino';
 
 @Component({
   selector: 'page-listo',
@@ -37,6 +37,6 @@ export class ListoPage {
 
   goToJuego(params){
     if (!params) params = {};
-    this.navCtrl.push(JuegoPage, {nombres: this.nombres, killers: this.killers, numKillers: this.numKillers});
+    this.navCtrl.push(MostrarAsesinoPage, {nombres: this.nombres, killers: this.killers, numKillers: this.numKillers});
   }
 }
