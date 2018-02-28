@@ -30,12 +30,6 @@ export class JuegoPage {
     this.playersId.splice(index, 1);
     if(this.killers[playerIndex] == 0){
       if(this.playersId.length / 2 <= this.numKillers){
-        let alert = this.alertCtrl.create({
-          title: 'Lo siento,',
-          subTitle: 'han ganado los asesinos.',
-          buttons: ['Otra va.']
-        });
-        alert.present();
         this.navCtrl.push(FinDelJuegoPage, {nombres : this.players, numKillers : this.numKillersTotal});
       }else{
         let alert = this.alertCtrl.create({
@@ -49,12 +43,6 @@ export class JuegoPage {
     }else{
       this.numKillers -= 1;
       if(this.numKillers == 0){
-        let alert = this.alertCtrl.create({
-          title: 'Enhorabuena,',
-          subTitle: 'ha ganado el pueblo',
-          buttons: ['Dale candela.']
-        });
-        alert.present();
         this.navCtrl.push(FinDelJuego2Page, {nombres : this.players, numKillers : this.numKillersTotal});
       }else{
         let alert = this.alertCtrl.create({
