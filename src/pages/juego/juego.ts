@@ -34,7 +34,7 @@ export class JuegoPage {
       }else{
         let alert = this.alertCtrl.create({
           title: 'Oh, vaya...',
-          subTitle: '...era pueblo.',
+          subTitle: '...era pueblo',
           buttons: ['Mmm, dejame continuar']
         });
         alert.present();
@@ -47,7 +47,7 @@ export class JuegoPage {
       }else{
         let alert = this.alertCtrl.create({
           title: 'Lo hemos conseguido,',
-          subTitle: 'era asesino.',
+          subTitle: 'era asesino',
           buttons: ['Seguir']
         });
         alert.present();

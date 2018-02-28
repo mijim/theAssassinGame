@@ -7,13 +7,15 @@
 </ion-header>
 <ion-content padding id="page5">
   <h4 id="juego-heading3" style="color:#000000;">
-    Toca para matar al jugador
+    Toca para matar al jugador:
   </h4>
-  <div class="spacer" style="width:300px;height:12px;" id="juego-spacer7"></div>
+  <div class="spacer" style="width:300px;height:20px;" id="juego-spacer7"></div>
   <div id="juego-container3">
-    <button ion-button color="assertive" *ngFor='let player of playersId;
-                                                 let i = index; ' (click)="kill(i, player.id)" block large>
-      {{player.name}}
-    </button>
+    <div *ngFor='let player of playersId; let i = index;'>
+      <button ion-button color="danger" (click)="kill(i, player.id)" block large>
+        {{player.name}}
+      </button>
+      <div class="spacer" style="width:300px;height:10px;" id="juego-spacer7"></div>
+    </div>  
   </div>
 </ion-content>

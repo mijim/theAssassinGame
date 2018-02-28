@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar hideBackButton="true">
+  <ion-navbar>
     <ion-title>
       Configuración de la partida
     </ion-title>
@@ -10,8 +10,9 @@
     <h4 id="configuraciNDeLaPartida-heading1" style="color:#000000;">
       Indica el número de jugadores:
     </h4>
-    <div class="spacer" style="width:300px;height:23px;" id="configuraciNDeLaPartida-spacer5"></div>
     <ion-list id="configuraciNDeLaPartida-list1">
+    <div class="spacer" style="width:300px;height:23px;" id="configuraciNDeLaPartida-spacer5"></div>
+
       <ion-item id="configuraciNDeLaPartida-select1">
         <ion-label>
           Número de jugadores
@@ -55,6 +56,7 @@
           </ion-option>
         </ion-select>
       </ion-item>
+      <div class="spacer" style="height:30px;" id="configuraciNDeLaPartida-spacer4"></div>
       <ion-item id="configuraciNDeLaPartida-select2">
         <ion-label>
           Número de asesinos
@@ -82,7 +84,7 @@
       </ion-item>
     </ion-list>
     <div class="spacer" style="height:40px;" id="configuraciNDeLaPartida-spacer4"></div>
-    <button id="configuraciNDeLaPartida-button2" ion-button outline color="positive" block icon-right on-click="goToConfiguraciNDeLaPartida2(numPlayers,numKillers)">
+    <button id="configuraciNDeLaPartida-button2" ion-button outline color="positive" block icon-right on-click="goToConfiguraciNDeLaPartida2(numPlayers,numKillers)" large>
       Continuar
       <ion-icon name="arrow-dropright"></ion-icon>
     </button>

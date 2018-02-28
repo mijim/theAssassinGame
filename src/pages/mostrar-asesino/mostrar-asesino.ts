@@ -30,7 +30,7 @@ export class MostrarAsesinoPage {
     this.nombreJugText = this.nombres[0];
     this.numPlayer = 0;
     this.show = true;
-    this.labelText = "";
+    this.labelText = "...";
   }
 
   mostrarCarta(){
@@ -49,7 +49,7 @@ export class MostrarAsesinoPage {
       this.buttonText = "Ocultar";
     }else{
       this.show = true;
-      this.labelText = "";
+      this.labelText = "...";
       this.buttonText = "Mostrar";
       this.nombreJugText = this.nombres[this.numPlayer];
     }
